@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>hayulpa homepage</title>
+    <style>
+      a{
+        text-decoration:none;
+        color:black;
+      }
+      h1{
+        font-size:65px;
+        text-align:center;
+        margin:0;
+        padding:0;
+        border-bottom:3px gray solid;
+      }
+      .nav{
+        padding:0;
+        margin-top:10px;
+        text-align:center;
+        border-bottom:2px lightgray solid;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height:40px;
+      }
+      #intro, #mom, #papa{
+        border-right : 1px lightgray solid;
+        margin-bottom : 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1><a href="index.html" style="color:darkgray;">하율이네 가족</a></h1>
+    <div class="nav">
+      <div id="intro"><a href="intro.html">Intro</a></div>
+      <div id="mom"><a href="mom.html">Mom</a></div>
+      <div id="papa"><a href="papa.html">Papa</a></div>
+      <div><a href="else.html">else</a></div>
+
+      <div id="disqus_thread"></div>
+    </div>
+    <div class="comment">
+      아래에 코멘트를 남겨주세요
+    </div>
+      <script>
+
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://hayulpa.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  </body>
+</html>
